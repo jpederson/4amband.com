@@ -1,6 +1,6 @@
 
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,500;1,100;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,300;0,500;1,300;1,500&display=swap');
 
 // sans-serif mixin
 @mixin font-title {
@@ -10,13 +10,13 @@
 // sans-serif mixin
 @mixin font {
 	font-family: "Roboto", sans-serif;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 // bold italic
 @mixin font-italic {
     font-family: "Roboto", sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     font-style: italic;
 }
 

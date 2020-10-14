@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,500;1,100;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,300;0,500;1,300;1,500&display=swap");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
@@ -92,10 +92,10 @@ img, video, iframe {
 
 body {
   font-family: "Roboto", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 110%;
   line-height: 1.5em;
-  color: black;
+  color: #222222;
   background-color: #eee; }
   @media only screen and (min-width: 1024px) {
     body {
@@ -119,7 +119,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 1.7em;
   font-family: "Roboto", sans-serif;
-  font-weight: 100; }
+  font-weight: 300; }
 
 h2 {
   font-size: 1.5em; }
@@ -136,7 +136,7 @@ h4 {
   font-size: 1.3em;
   line-height: 1.3em;
   font-family: "Roboto", sans-serif;
-  font-weight: 100; }
+  font-weight: 300; }
 
 hr {
   border: 0;
@@ -157,7 +157,7 @@ strong {
 
 em {
   font-family: "Roboto", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-style: italic; }
 
 strong em, em strong {
