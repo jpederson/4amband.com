@@ -114,19 +114,18 @@ h1, h2, h3, h4, h5, h6, p {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
-  line-height: 1.2em; }
+  line-height: 1.4em;
+  font-family: "Bebas Neue", sans-serif; }
 
 h1 {
-  font-size: 1.7em;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300; }
+  font-size: 2em; }
 
 h2 {
-  font-size: 1.5em; }
+  font-size: 1.9em; }
 
 h3 {
-  font-size: 1.3em;
-  line-height: 1.2em;
+  font-size: 1.7em;
+  line-height: 1.3em;
   text-transform: uppercase; }
   h3.caps {
     text-transform: uppercase;
