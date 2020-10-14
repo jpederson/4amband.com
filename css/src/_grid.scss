@@ -1,0 +1,54 @@
+
+@include respond-to( 768px ) {
+	.sixty, .fourty, .quarter, .three-quarter, .third, .half, .thirty, .two-third {
+		float: left;
+
+		&.right {
+			float: right;
+		}
+	}
+
+	.sixty {
+		width: 58%;
+		margin: 0 2%;
+	}
+
+	.quarter {
+		width: 25%;
+		padding: 0 5px;
+	}
+
+	.three-quarter {
+		width: 75%;
+		padding: 0 15px;
+	}
+
+	.third {
+		width: 33.3%;
+		padding: 0 15px;
+	}
+
+	.two-third {
+		width: 66.66%;
+		padding: 0 15px;
+	}
+
+	.half {
+		width: 50%;
+		padding: 20px;
+	}
+
+	.thirty {
+		width: 28%;
+		margin: 0 1%;
+	}
+
+	.fourty {
+		width: 38%;
+		margin: 0 1%;
+	}
+}
+
+
+.text-center { text-align: center; }
+.text-right { text-align: right; }

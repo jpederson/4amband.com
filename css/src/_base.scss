@@ -1,0 +1,119 @@
+
+body {
+	@include font;
+	font-size: 110%;
+	line-height: 1.5em;
+	color: black;
+	background-color: #eee;
+	
+	@include respond-to( 1024px ) {
+		font-size: 130%;
+	}
+}
+
+a {
+	color: $red;
+	text-decoration: none;
+	cursor: pointer;
+
+	&:hover {
+		color: lighten( $red, 10% );
+	}
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 10px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	line-height: 1.2em;
+}
+
+h1 {
+	font-size: 1.7em;
+	@include font;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.3em;
+	line-height: 1.2em;
+	text-transform: uppercase;
+
+	&.caps {
+		text-transform: uppercase;
+		padding-top: 50px;
+	}
+
+}
+
+h4 {
+	font-size: 1.3em;
+	line-height: 1.3em;
+	@include font;
+}
+
+hr {
+	border: 0;
+	border-bottom: 1px solid rgba( $grey, .3 );
+	height: 0;
+	padding: 0;
+	margin: 30px 0;
+
+	@include respond-to( 1220px ) {
+		margin: 60px 0;
+	}
+}
+
+p {
+	&.large {
+		font-size: 1.2em;
+	}
+}
+
+strong {
+	@include font-bold;
+}
+
+em {
+	@include font-italic;
+}
+
+strong em, em strong {
+	@include font-bold-italic;
+}
+
+input[type=text], select, textarea {
+	display: block;
+	width: 100%;
+	padding: 14px 20px;
+	border: 0;
+	font-size: 20px;
+	line-height: 20px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	-webkit-appearance: none;
+	background: white;
+
+	&.amount {
+		background: white url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAeBAMAAACcf1DPAAAAIVBMVEUAAACkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT7b4aZAAAACnRSTlMAm4ApQMYQ3W1QNQOf6wAAAIRJREFUKM9joA3gVMMlw7qEZJmkqlXLG7BJsFWtWrVKAJsM46pKl4kTsMlwrXLAYQ3XchCJXY8BkMRuz6IE7DLMq1YtxKErESiFQ5fRqlUBOKxiWrUYl/ukFuGS6cIpE4VVhiOBgQO7PVarQnGEddcqoH+w2sGiGLXQgHrpgIHZjYGWAADGBCLRA4y1vAAAAABJRU5ErkJggg==') left center no-repeat;
+		padding: 14px 0 14px 30px;
+	}
+
+	&.percent {
+		background: white url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAeBAMAAACcf1DPAAAAJ1BMVEUAAACkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKRvW9ciAAAADHRSTlMAOZbGgBBY7NlwILNagw7UAAAAyUlEQVQoz9XPrw6CUBgF8KOIzj9BOoHNzUSwslmMTgIm5mYwGgg+gFEbwQcw+AAEHoAgfwRk56GUKN98AE64N/x273c+tCBHXupLfzehSzIEVF6bEpTaMgfGnDbFrjBJAS8TY8wnlBIjLoREXymg8CHEfmGQws4hoifOPesw3M3mDVFY8OQWW580fkU1mTpmrNA6ix81p09DTzAoILIv4cXoUkoUw47Rk82HvP15E6R1ebhyjl8BY1oU3Xo8AGq9j5B1ffY3K7QgHxSbQJgYtVbrAAAAAElFTkSuQmCC') right center no-repeat;	
+	}
+
+}
+
+select {
+	background: white url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAFMN540AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OTRGMjU5OUNGQzkxMTFFMkIxMDE4QUM0MEI1QTMzRDQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OTRGMjU5OURGQzkxMTFFMkIxMDE4QUM0MEI1QTMzRDQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5NEYyNTk5QUZDOTExMUUyQjEwMThBQzQwQjVBMzNENCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5NEYyNTk5QkZDOTExMUUyQjEwMThBQzQwQjVBMzNENCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqV+IWIAAAE7SURBVHjaYvz//z8DMmBiQANggZaWFhDeBmIzomsBCCBGos3YBjIHqxaAAMIQQAcsMAbUiCNQrk1NTQ2qApgEugkErQAIILwKmPDpZCLW5TBXMwBdbYOu0wbd5ejG9lPHtQABRDAgyPYqIYAeR6Ag0QJSPljUbgEG0TW8moEApOA3EM9HEksE4tvEOhuk0A7KtsOmcWADDCCABs7mIaqZBS11gagyHGq7YEUHvhQGyrFdaGJlxDr7GBD/Q+L/g4oR7WcfHGyCzgaBT0jp+ROpmmE5aTR5ogGAAKPIz6MWD32LYW0YcgB6iUNKboQBViBeDMQyRKh9AsSx0DqS4iwBMiQCiE8SUHcaqu43tfNiMRCvxyEHEi+kZSHQC8WExGhS+oB8lwNl5+MJBYoTFzZwAVtrerQAGbUYGQAAJBR569gu2ocAAAAASUVORK5CYII=) right center no-repeat;
+	padding: 16px 20px;
+	width: 100%;
+}

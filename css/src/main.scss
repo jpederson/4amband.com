@@ -1,0 +1,53 @@
+
+$grey: #222222;
+$red: #d7392e;
+
+@import "reset";
+@import "mixins";
+@import "grid";
+@import "fonts";
+@import "base";
+
+body {
+	background: url(../img/bg-body.jpg) center center no-repeat;
+	background-size: cover;
+}
+
+.container {
+	@include clearfix;
+	min-height: 100%;
+	padding: 20px;
+	max-width: 1680px;
+	margin: 0 auto;
+
+	@include respond-to( 768px ) {
+		padding: 30px 40px;
+	}
+
+	@include respond-to( 1024px ) {
+		padding: 40px 50px;
+	}
+
+	@include respond-to( 1220px ) {
+		padding: 50px 70px;
+	}
+}
+
+.fouram-logo {
+	margin-bottom: 30px;
+}
+
+.no-touch .music-logo {
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+	filter: gray; /* IE6-9 */
+	-webkit-filter: grayscale( 100% ); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+	opacity: .7;
+	transition: all 400ms ease-in-out;
+}
+
+.no-touch .music-logo:hover {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+	-webkit-filter: grayscale(0%);
+	opacity: 1;
+}
+

@@ -1,0 +1,35 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,500;1,100;1,500&display=swap');
+
+// sans-serif mixin
+@mixin font-title {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+// sans-serif mixin
+@mixin font {
+	font-family: "Roboto", sans-serif;
+    font-weight: 100;
+}
+
+// bold italic
+@mixin font-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+// bold face
+@mixin font-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+// bold italic
+@mixin font-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
