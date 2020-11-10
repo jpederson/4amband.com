@@ -4,7 +4,7 @@ A github pages website served over https.
 
 Currently uses node-sass instead of regular (ruby-powered) Sass, so it can be compiled easily on Linux/Unix as well as OSX/Windows. Use the commands below to download and build the necessary modules:
 
-```
+```sh
 git clone https://github.com/jpederson/4amband.com.git 4am
 cd 4am
 npm install
