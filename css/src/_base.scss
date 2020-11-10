@@ -29,6 +29,7 @@ h1, h2, h3, h4, h5, h6, p {
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 	line-height: 1.2em;
+	text-transform: uppercase;
 	@include font-title;
 }
 
@@ -42,10 +43,8 @@ h2 {
 
 h3 {
 	font-size: 1.7em;
-	text-transform: uppercase;
 
 	&.caps {
-		text-transform: uppercase;
 		padding-top: 50px;
 	}
 
